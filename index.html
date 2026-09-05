@@ -42,6 +42,15 @@
     </header>
 
     <main id="main">
+      <!-- 検索は assets/manual/app.js が #manual-search と data-search-section を見て動く -->
+      <section class="search-band" aria-label="サイト内検索">
+        <div class="search-box">
+          <label for="manual-search">知りたい操作を検索</label>
+          <input id="manual-search" type="search" placeholder="例: 締め日、PDF、通知、半日有給" autocomplete="off" />
+        </div>
+        <p id="search-status" class="search-status" aria-live="polite"></p>
+      </section>
+
       <section id="top" class="section">
         <h1 class="section-heading">取扱説明書</h1>
         <p class="lead">
